@@ -8,5 +8,6 @@ I wanted to learn how to monitor file changes in a directory on macOS. As such, 
 * That if I want more fine grained information I should is the [kqueue](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/kevent.2.html) API.
 * For debugging - at least for LLDB - if you set a break point beyond where CFRunLoopRun() is called the debugger will spin up a new thread to run that such that you can look at the values in the callback function.
 
-### Additional Resource
+### Additional resource
 
+* If you'd like to see some production code for this API you can look at [fswatch](https://github.com/emcrisostomo/fswatch/tree/master/libfswatch/src/libfswatch/c%2B%2B). Additionally, it shows API implementations for other platforms like Linux or Windows.
